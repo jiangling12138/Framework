@@ -1,0 +1,385 @@
+在global_step=7599，
+global_step=10799处
+感觉有问题，应该是极端情况，不宜作为具有普适性的expert。由于初始位置、速度等值的影响，这可能会产生极端好的情况（如初始状态就接近成功条件）。如果将这种极端情况作为expert，就有可能会影响，不具有一般性。
+
+Training expert for Pendulum-v1
+[ExpertManager] Running training for Pendulum-v1 with script /mnt/g/Projects/Framework/cleanrl/sac_continuous_action.py
+COMMAND: /home/jiangling/miniconda3/envs/framework/bin/python /mnt/g/Projects/Framework/cleanrl/sac_continuous_action.py --env-id Pendulum-v1 --total-timesteps 500000 --exp-name expert_Pendulum-v1_1757079870 --policy-lr 3e-4 --q-lr 1e-3 --buffer-size 1000000 --learning-starts 5000 --batch-size 256 --policy-frequency 2 --target-network-frequency 1
+/home/jiangling/miniconda3/envs/framework/lib/python3.10/site-packages/tyro/_parsers.py:379: UserWarning: The field `wandb-entity` is annotated with type `<class 'str'>`, but the default value `None` has type `<class 'NoneType'>`. We'll try to handle this gracefully, but it may cause unexpected behavior.
+  warnings.warn(message)
+global_step=199, episodic_return=[-876.48834]
+global_step=399, episodic_return=[-1450.2715]
+global_step=599, episodic_return=[-1046.7649]
+global_step=799, episodic_return=[-1196.8423]
+global_step=999, episodic_return=[-766.25964]
+global_step=1199, episodic_return=[-964.96625]
+global_step=1399, episodic_return=[-963.5686]
+global_step=1599, episodic_return=[-1274.91]
+global_step=1799, episodic_return=[-1445.5342]
+global_step=1999, episodic_return=[-1317.9236]
+global_step=2199, episodic_return=[-1105.7345]
+global_step=2399, episodic_return=[-870.6693]
+global_step=2599, episodic_return=[-1821.6957]
+global_step=2799, episodic_return=[-757.92834]
+global_step=2999, episodic_return=[-1587.306]
+global_step=3199, episodic_return=[-744.95135]
+global_step=3399, episodic_return=[-884.5849]
+global_step=3599, episodic_return=[-1071.1926]
+global_step=3799, episodic_return=[-1686.8712]
+global_step=3999, episodic_return=[-721.29846]
+global_step=4199, episodic_return=[-959.75146]
+global_step=4399, episodic_return=[-910.06195]
+global_step=4599, episodic_return=[-1667.039]
+global_step=4799, episodic_return=[-892.1816]
+global_step=4999, episodic_return=[-1391.5878]
+SPS: 1892
+global_step=5199, episodic_return=[-968.7652]
+SPS: 1377
+SPS: 1018
+global_step=5399, episodic_return=[-1392.3275]
+SPS: 831
+SPS: 712
+global_step=5599, episodic_return=[-1530.013]
+SPS: 610
+SPS: 535
+global_step=5799, episodic_return=[-1616.396]
+SPS: 467
+SPS: 427
+global_step=5999, episodic_return=[-1525.0844]
+SPS: 382
+SPS: 349
+global_step=6199, episodic_return=[-1314.996]
+SPS: 323
+SPS: 301
+global_step=6399, episodic_return=[-1276.952]
+SPS: 279
+SPS: 254
+global_step=6599, episodic_return=[-1226.4156]
+SPS: 244
+SPS: 237
+global_step=6799, episodic_return=[-1141.0417]
+SPS: 229
+SPS: 224
+global_step=6999, episodic_return=[-1008.6461]
+SPS: 219
+SPS: 215
+global_step=7199, episodic_return=[-916.81854]
+SPS: 211
+SPS: 207
+global_step=7399, episodic_return=[-672.2737]
+SPS: 204
+SPS: 200
+global_step=7599, episodic_return=[-5.2022595]
+[Filter] Skip episodic_return=-5.20 (> -70, ignored)
+SPS: 198
+SPS: 195
+global_step=7799, episodic_return=[-126.542534]
+SPS: 192
+SPS: 188
+global_step=7999, episodic_return=[-245.33086]
+SPS: 183
+SPS: 178
+global_step=8199, episodic_return=[-128.23347]
+SPS: 173
+SPS: 168
+global_step=8399, episodic_return=[-126.2291]
+SPS: 163
+SPS: 159
+global_step=8599, episodic_return=[-132.55873]
+SPS: 156
+SPS: 154
+global_step=8799, episodic_return=[-251.82909]
+SPS: 151
+SPS: 147
+global_step=8999, episodic_return=[-125.283615]
+SPS: 145
+SPS: 143
+global_step=9199, episodic_return=[-126.50605]
+SPS: 142
+SPS: 140
+global_step=9399, episodic_return=[-124.758896]
+SPS: 139
+SPS: 138
+global_step=9599, episodic_return=[-119.18932]
+SPS: 138
+SPS: 137
+global_step=9799, episodic_return=[-239.56929]
+SPS: 136
+SPS: 136
+global_step=9999, episodic_return=[-127.214134]
+SPS: 135
+SPS: 134
+global_step=10199, episodic_return=[-122.94755]
+SPS: 134
+SPS: 133
+global_step=10399, episodic_return=[-239.55634]
+SPS: 132
+SPS: 132
+global_step=10599, episodic_return=[-119.58358]
+SPS: 131
+SPS: 130
+global_step=10799, episodic_return=[-1.3989394]
+[Filter] Skip episodic_return=-1.40 (> -70, ignored)
+SPS: 130
+SPS: 129
+global_step=10999, episodic_return=[-337.2875]
+SPS: 129
+SPS: 128
+global_step=11199, episodic_return=[-115.99735]
+
+！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！
+训练代码如下：
+！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！
+
+#!/usr/bin/env python3
+# train_expert.py
+# 一键训练并保存 experts/ 下的专家模型（适配已安装的 cleanrl 脚本）
+# 增强：在训练前检查 experts/ 是否已有模型，若存在则跳过训练
+
+import os
+import sys
+import time
+import re
+import glob
+import shutil
+import subprocess
+
+# 任务 -> cleanrl 脚本 映射（你已把这些脚本放到 cleanrl 包或 site-packages）
+ALGO_MAP = {
+    "CartPole-v1": "dqn.py",
+    "Acrobot-v1": "dqn.py",
+    "MountainCar-v0": "dqn.py",
+    "MountainCarContinuous-v0": "ppo_continuous_action.py",
+    "Pendulum-v1": "sac_continuous_action.py",
+}
+
+# 建议训练步数（可按需调整）
+TIMESTEPS = {
+    "CartPole-v1": 500_000,
+    "Acrobot-v1": 500_000,
+    "MountainCar-v0": 1_000_000,
+    "MountainCarContinuous-v0": 500_000,
+    "Pendulum-v1": 500_000,
+}
+
+EXPERTS_DIR = "experts"
+os.makedirs(EXPERTS_DIR, exist_ok=True)
+
+# 建议参数映射（仅在脚本源码包含对应字段时才传入）
+SUGGESTED_PARAMS = {
+    "dqn.py": {
+        "--save-model": ("save_model", None),
+        "--learning-rate": ("learning_rate", "0.0005"),
+        "--buffer-size": ("buffer_size", "500000"),
+        "--learning-starts": ("learning_starts", "1000"),
+        "--train-frequency": ("train_frequency", "1"),
+        "--target-network-frequency": ("target_network_frequency", "1000"),
+        "--start-e": ("start_e", "1"),
+        "--end-e": ("end_e", "0.01"),
+        "--exploration-fraction": ("exploration_fraction", "0.8"),
+        "--batch-size": ("batch_size", "64"),
+    },
+    "sac_continuous_action.py": {
+        "--policy-lr": ("policy_lr", "3e-4"),
+        "--q-lr": ("q_lr", "1e-3"),
+        "--buffer-size": ("buffer_size", "1000000"),
+        "--learning-starts": ("learning_starts", "5000"),
+        "--batch-size": ("batch_size", "256"),
+        "--policy-frequency": ("policy_frequency", "2"),
+        "--target-network-frequency": ("target_network_frequency", "1"),
+    },
+    "ppo.py": {
+        "--learning-rate": ("learning_rate", "2.5e-4"),
+        "--num-envs": ("num_envs", "4"),
+        "--num-steps": ("num_steps", "128"),
+    },
+}
+
+
+def find_cleanrl_script_path(script_name):
+    """查找 cleanrl/<script_name> 的路径"""
+    # 1) installed cleanrl package
+    try:
+        import cleanrl  # type: ignore
+        pkg_dir = os.path.dirname(cleanrl.__file__)
+        candidate = os.path.join(pkg_dir, script_name)
+        if os.path.isfile(candidate):
+            return candidate
+    except Exception:
+        pass
+
+    # 2) search sys.path for "cleanrl" directory
+    for p in sys.path:
+        candidate_dir = os.path.join(p, "cleanrl")
+        if os.path.isdir(candidate_dir):
+            candidate = os.path.join(candidate_dir, script_name)
+            if os.path.isfile(candidate):
+                return candidate
+
+    # 3) relative ./cleanrl folder (if you cloned into project)
+    candidate = os.path.join(os.getcwd(), "cleanrl", script_name)
+    if os.path.isfile(candidate):
+        return candidate
+
+    return None
+
+
+def script_supports_field(script_path, field_name):
+    """检测脚本源码中是否出现 dataclass 字段名（例如 'save_model' 或 'policy_lr'）"""
+    try:
+        txt = open(script_path, "r", encoding="utf-8").read()
+    except Exception:
+        return False
+    return field_name in txt
+
+
+def find_model_in_run_dir(run_dir):
+    """在 runs/run_dir 下查找可能的模型文件（返回第一个匹配或最新修改的）"""
+    if not os.path.isdir(run_dir):
+        return None
+    pattern_list = ["**/*.cleanrl_model", "**/*.pt", "**/*.pth", "**/*.pkl", "**/*.bin"]
+    files = []
+    for pat in pattern_list:
+        files.extend(glob.glob(os.path.join(run_dir, pat), recursive=True))
+    if not files:
+        return None
+    files.sort(key=lambda p: os.path.getmtime(p), reverse=True)
+    return files[0]
+
+
+def find_existing_expert_file(env_id):
+    """在 experts/ 目录查找是否已有对应模型文件"""
+    patterns = [
+        f"{env_id}_best_expert.*",
+        f"expert_{env_id}*",
+        f"{env_id}_best_expert*",
+        f"*{env_id}*cleanrl_model",
+        f"{env_id}*expert*",
+    ]
+    for pat in patterns:
+        matches = glob.glob(os.path.join(EXPERTS_DIR, pat))
+        if matches:
+            return matches[0]
+    return None
+
+
+def train_one(env_id):
+    """为单个 env 训练 expert，若 experts/ 已有则跳过"""
+    existing = find_existing_expert_file(env_id)
+    if existing:
+        print(f"[ExpertManager] Found existing expert for {env_id}: {existing}  --> skipping training.")
+        return existing
+
+    if env_id not in ALGO_MAP:
+        print(f"[Error] no algorithm mapping for {env_id}")
+        return None
+
+    algo_script = ALGO_MAP[env_id]
+    script_path = find_cleanrl_script_path(algo_script)
+    if script_path is None:
+        print(f"[Error] could not locate cleanrl script {algo_script}. Make sure cleanrl is installed or cleanrl/{algo_script} exists.")
+        return None
+
+    timesteps = TIMESTEPS.get(env_id, 200_000)
+    timestamp = int(time.time())
+    exp_name = f"expert_{env_id}_{timestamp}"
+    run_dir_glob = f"runs/{env_id}__{exp_name}*"
+    run_dir = f"runs/{env_id}__{exp_name}"
+
+    cmd = [sys.executable, script_path, "--env-id", env_id, "--total-timesteps", str(timesteps), "--exp-name", exp_name]
+
+    suggested = SUGGESTED_PARAMS.get(algo_script, {})
+    for flag, (field_name, value) in suggested.items():
+        if script_supports_field(script_path, field_name):
+            if value is None:
+                cmd.append(flag)
+            else:
+                cmd.extend([flag, str(value)])
+
+    print(f"[ExpertManager] Running training for {env_id} with script {script_path}")
+    print("COMMAND:", " ".join(cmd))
+
+    proc = subprocess.Popen(cmd, stdout=subprocess.PIPE, stderr=subprocess.STDOUT, text=True, bufsize=1)
+
+    best_reward = -float("inf")
+    best_model_dst_base = os.path.join(EXPERTS_DIR, f"{env_id}_best_expert")  # will add extension
+
+    try:
+        for line in proc.stdout:
+            print(line, end="")
+
+            m = re.search(r"episodic_return=\[([^\]]+)\]", line)
+            if m:
+                try:
+                    val = float(m.group(1).strip().strip(","))
+                except Exception:
+                    continue
+
+                # === 新增过滤机制：Pendulum-v1 时，忽略 reward > -70 的异常好值 ===
+                if env_id == "Pendulum-v1" and val > -70:
+                    print(f"[Filter] Skip episodic_return={val:.2f} (> -70, ignored)")
+                    continue
+
+                if val > best_reward:
+                    best_reward = val
+                    matches = glob.glob(run_dir_glob)
+                    model_found = None
+                    for d in matches:
+                        cand = find_model_in_run_dir(d)
+                        if cand:
+                            model_found = cand
+                            break
+                    if model_found:
+                        _, ext = os.path.splitext(model_found)
+                        dst = best_model_dst_base + ext
+                        try:
+                            shutil.copyfile(model_found, dst)
+                            print(f"[ExpertManager] New best model saved to {dst} (reward={best_reward:.2f})")
+                        except Exception as e:
+                            print("[ExpertManager] copy failed:", e)
+
+        proc.wait()
+    except KeyboardInterrupt:
+        print("[ExpertManager] Interrupted by user, terminating child process...")
+        proc.terminate()
+        proc.wait()
+
+    print(f"[ExpertManager] Training finished for {env_id}, best reward={best_reward if best_reward != -float('inf') else 'N/A'}")
+
+    matches = glob.glob(run_dir_glob)
+    model_candidate = None
+    for d in matches:
+        m = find_model_in_run_dir(d)
+        if m:
+            model_candidate = m
+            break
+
+    if model_candidate:
+        _, ext = os.path.splitext(model_candidate)
+        dst = best_model_dst_base + ext
+        try:
+            shutil.copyfile(model_candidate, dst)
+            print(f"[ExpertManager] Copied model from run dir to {dst}")
+            return dst
+        except Exception as e:
+            print("[ExpertManager] Final copy failed:", e)
+            return None
+    else:
+        print("[Warning] No model file found in run directories for", env_id)
+        return None
+
+
+def main():
+    tasks = ["CartPole-v1", "Acrobot-v1", "MountainCar-v0", "MountainCarContinuous-v0", "Pendulum-v1"]
+    for env in tasks:
+        print("=" * 60)
+        print("Training expert for", env)
+        model = train_one(env)
+        if model:
+            print(f"[Main] Expert ready for {env}: {model}")
+        else:
+            print(f"[Main] Expert training for {env} failed or no model saved.")
+
+
+if __name__ == "__main__":
+    main()
